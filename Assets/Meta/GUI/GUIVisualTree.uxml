@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Meta/GUI/MainStyle.uss?fileID=7433441132597879392&amp;guid=0535a16372ae537c79e2f8db7e4c08f4&amp;type=3#MainStyle" />
+    <ui:VisualElement name="RootContainer" style="flex-grow: 1;">
+        <ui:Label text="Hover Location: -" name="HoverInfo" style="width: auto; font-size: 25px; -unity-font-style: normal; color: rgb(255, 255, 255); margin-left: 10px;" />
+    </ui:VisualElement>
+</ui:UXML>
