@@ -7,11 +7,11 @@ using UnityEngine.UIElements;
 public class Player : BaseCharacter
 {
     // Delegates
-    public event Action<Vector2Int /* OldPoint */, Vector2Int /* NewPoint */> OnHoverPointUpdated;
+    public event Action<Vector2Int /* OldPoint */, Vector2Int /* NewPoint */> OnHoverPointUpdated;  // Whenever the cursor changes which tile point it's hovering over
 
 
     // Properties
-    public Vector2Int hoverPoint { private set; get; } = INVALID_POINT;
+    public Vector2Int hoverPoint { private set; get; } = INVALID_POINT;  // Point on grid at which the cursor is hovering
 
 
     // Components
@@ -28,8 +28,11 @@ public class Player : BaseCharacter
         }
 
 
-        // Store old point & set new point
+        // Store old point for broadcasting
         var oldHoverPoint = hoverPoint;
+
+
+        // Assign new point
         hoverPoint = newHoverPoint;
 
 
@@ -39,7 +42,7 @@ public class Player : BaseCharacter
 
 
     // Update Methods
-    void MouseHoverInputUpdate()
+    void MouseHoverInputUpdate()  // Responsible for detecting which tile cursor is hovering over every update
     {
         // Raycast in the direction of camera location to mouse location
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -66,7 +69,7 @@ public class Player : BaseCharacter
         Vector2Int newHoverPoint = tileStats.GetTilePoint();
         SetHoverPoint(newHoverPoint);
     }
-    void MouseClickInputUpdate()
+    void MouseClickInputUpdate()  // Responsible for detecting clicks on tiles
     {
         // Return if mouse was not clicked
         if (!Input.GetMouseButtonDown(0))
@@ -82,7 +85,7 @@ public class Player : BaseCharacter
         }
 
 
-        // Get Target points to travel along
+        // Get points to travel along to reach desired tile
         travelPoints.Clear();
         travelPoints = board.GetPathToPoint(currentPoint, hoverPoint);
     }
@@ -93,16 +96,21 @@ public class Player : BaseCharacter
     {
         base.Start();
 
+
         // Get Components
         cam = Camera.main;
     }
     protected override void Update()
     {
-        // Listen for inputs if no travel points
+        // Checking for hovering
+        MouseHoverInputUpdate();
+
+
+        // Listen for inputs if no travel points given
         if(travelPoints.Count==0){
-            MouseHoverInputUpdate();
             MouseClickInputUpdate();
         }
+
 
         base.Update();
     }

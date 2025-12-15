@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialPoint: {x: 9, y: 9}
-  movementSpeed: 10
+  movementSpeed: 4
   tileMask:
     serializedVersion: 2
     m_Bits: 64

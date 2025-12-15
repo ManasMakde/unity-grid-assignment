@@ -324,7 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &39983547
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &40130481
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &42272069
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &46205376
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &48687897
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,7 +944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &99384695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &108672345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &109239117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &123959237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &127345497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &127785408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,7 +1688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &196442999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,7 +1894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &250656700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,7 +2018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &298264609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &305834372
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,7 +2266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &315583557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,7 +2390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &332022128
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,7 +2514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &354602560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2639,37 +2639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0329623fd228d93a8beede88f67f738d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &391976259
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 391976260}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &391976260
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391976259}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.63, y: 0, z: 4.51}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &419901207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2793,7 +2762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &433357015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,7 +2886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &444453139
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,7 +3010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &543597093
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,7 +3134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &607801784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,7 +3258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &639781056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,7 +3382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &641202437
 GameObject:
   m_ObjectHideFlags: 0
@@ -3537,7 +3506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &670468892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3661,7 +3630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &679555179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3785,7 +3754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &685937450
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,7 +3878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &746265911
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,7 +4002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &752615598
 GameObject:
   m_ObjectHideFlags: 0
@@ -4157,7 +4126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &764588483
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,7 +4250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &766536275
 GameObject:
   m_ObjectHideFlags: 0
@@ -4405,7 +4374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &778493177
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,7 +4498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &779816857
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,7 +4622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &790020456
 GameObject:
   m_ObjectHideFlags: 0
@@ -5007,7 +4976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &870630103
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,7 +5100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &908890899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5255,7 +5224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &942783791
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,7 +5348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &943374381
 GameObject:
   m_ObjectHideFlags: 0
@@ -5503,7 +5472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &949959271
 GameObject:
   m_ObjectHideFlags: 0
@@ -5627,7 +5596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &953399056
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,7 +5720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &960063319
 GameObject:
   m_ObjectHideFlags: 0
@@ -5875,7 +5844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &986700569
 GameObject:
   m_ObjectHideFlags: 0
@@ -5999,7 +5968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &991727703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6123,7 +6092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1015079169
 GameObject:
   m_ObjectHideFlags: 0
@@ -6247,7 +6216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1031830425
 GameObject:
   m_ObjectHideFlags: 0
@@ -6371,7 +6340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1042448633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6495,7 +6464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1083368284
 GameObject:
   m_ObjectHideFlags: 0
@@ -6619,7 +6588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1096266425
 GameObject:
   m_ObjectHideFlags: 0
@@ -6743,7 +6712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1139207156
 GameObject:
   m_ObjectHideFlags: 0
@@ -6867,7 +6836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1144288449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6991,7 +6960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1156881356
 GameObject:
   m_ObjectHideFlags: 0
@@ -7115,7 +7084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1275748693
 GameObject:
   m_ObjectHideFlags: 0
@@ -7239,7 +7208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1287355248
 GameObject:
   m_ObjectHideFlags: 0
@@ -7363,7 +7332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1299483718
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,7 +7497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1321097687
 GameObject:
   m_ObjectHideFlags: 0
@@ -7719,7 +7688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1344779904
 GameObject:
   m_ObjectHideFlags: 0
@@ -7843,7 +7812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1345611933
 GameObject:
   m_ObjectHideFlags: 0
@@ -7967,7 +7936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1355166331
 GameObject:
   m_ObjectHideFlags: 0
@@ -8091,7 +8060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1417405130
 GameObject:
   m_ObjectHideFlags: 0
@@ -8215,7 +8184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1423393205
 GameObject:
   m_ObjectHideFlags: 0
@@ -8421,7 +8390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1623427956
 GameObject:
   m_ObjectHideFlags: 0
@@ -8545,7 +8514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1663126600
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,7 +8638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1672586914
 GameObject:
   m_ObjectHideFlags: 0
@@ -8793,7 +8762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1674418672
 GameObject:
   m_ObjectHideFlags: 0
@@ -8917,7 +8886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1688258534
 GameObject:
   m_ObjectHideFlags: 0
@@ -9041,7 +9010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1691189376
 GameObject:
   m_ObjectHideFlags: 0
@@ -9165,7 +9134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1716211511
 GameObject:
   m_ObjectHideFlags: 0
@@ -9289,7 +9258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1727779207
 GameObject:
   m_ObjectHideFlags: 0
@@ -9413,7 +9382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1733777700
 GameObject:
   m_ObjectHideFlags: 0
@@ -9537,7 +9506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1764726088
 GameObject:
   m_ObjectHideFlags: 0
@@ -9661,7 +9630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1769802850
 GameObject:
   m_ObjectHideFlags: 0
@@ -9785,7 +9754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 6
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1774602263
 GameObject:
   m_ObjectHideFlags: 0
@@ -9909,7 +9878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1808668857
 GameObject:
   m_ObjectHideFlags: 0
@@ -10033,7 +10002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1813123414
 GameObject:
   m_ObjectHideFlags: 0
@@ -10157,7 +10126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1816294537
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,7 +10250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1823574710
 GameObject:
   m_ObjectHideFlags: 0
@@ -10405,7 +10374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 3
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1839842593
 GameObject:
   m_ObjectHideFlags: 0
@@ -10529,7 +10498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1840933941
 GameObject:
   m_ObjectHideFlags: 0
@@ -10653,7 +10622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1847382268
 GameObject:
   m_ObjectHideFlags: 0
@@ -10777,7 +10746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1854949211
 GameObject:
   m_ObjectHideFlags: 0
@@ -10901,7 +10870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1860079016
 GameObject:
   m_ObjectHideFlags: 0
@@ -11025,7 +10994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 2
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1862714018
 GameObject:
   m_ObjectHideFlags: 0
@@ -11149,7 +11118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1872508058
 GameObject:
   m_ObjectHideFlags: 0
@@ -11273,7 +11242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1878497807
 GameObject:
   m_ObjectHideFlags: 0
@@ -11397,7 +11366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 6
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1886501046
 GameObject:
   m_ObjectHideFlags: 0
@@ -11521,7 +11490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1901972612
 GameObject:
   m_ObjectHideFlags: 0
@@ -11645,7 +11614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1902738647
 GameObject:
   m_ObjectHideFlags: 0
@@ -11769,7 +11738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1931322186
 GameObject:
   m_ObjectHideFlags: 0
@@ -11893,7 +11862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1935431911
 GameObject:
   m_ObjectHideFlags: 0
@@ -12017,7 +11986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1954197141
 GameObject:
   m_ObjectHideFlags: 0
@@ -12141,7 +12110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 1
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1972546465
 GameObject:
   m_ObjectHideFlags: 0
@@ -12265,7 +12234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 7
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2010292840
 GameObject:
   m_ObjectHideFlags: 0
@@ -12471,7 +12440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 8
   column: 0
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2036822931
 GameObject:
   m_ObjectHideFlags: 0
@@ -12595,7 +12564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 5
   column: 8
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2054283739
 GameObject:
   m_ObjectHideFlags: 0
@@ -12719,7 +12688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 9
   column: 9
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2058959880
 GameObject:
   m_ObjectHideFlags: 0
@@ -12843,7 +12812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 4
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2092636725
 GameObject:
   m_ObjectHideFlags: 0
@@ -12967,7 +12936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 0
   column: 4
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2107176290
 GameObject:
   m_ObjectHideFlags: 0
@@ -13091,7 +13060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 3
   column: 2
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2122754728
 GameObject:
   m_ObjectHideFlags: 0
@@ -13215,7 +13184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 7
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2131172783
 GameObject:
   m_ObjectHideFlags: 0
@@ -13339,7 +13308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   row: 1
   column: 5
-  platformOffset: {x: 0, y: 0.5, z: 0}
+  standOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &5743016923895275035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13350,7 +13319,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 550320697865224811, guid: b9595b7dd75735addb2a8a461a408254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.63
+      value: 4.571
       objectReference: {fileID: 0}
     - target: {fileID: 550320697865224811, guid: b9595b7dd75735addb2a8a461a408254, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13358,7 +13327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 550320697865224811, guid: b9595b7dd75735addb2a8a461a408254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.51
+      value: 4.455
       objectReference: {fileID: 0}
     - target: {fileID: 550320697865224811, guid: b9595b7dd75735addb2a8a461a408254, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13392,10 +13361,6 @@ PrefabInstance:
       propertyPath: boardObj
       value: 
       objectReference: {fileID: 354602560}
-    - target: {fileID: 2260637657902201021, guid: b9595b7dd75735addb2a8a461a408254, type: 3}
-      propertyPath: movementSpeed
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6155283573631760396, guid: b9595b7dd75735addb2a8a461a408254, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -13415,7 +13380,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5527003215677450401, guid: 0199413877d31e76390609775552d428, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.49
+      value: -4.398
       objectReference: {fileID: 0}
     - target: {fileID: 5527003215677450401, guid: 0199413877d31e76390609775552d428, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13423,7 +13388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5527003215677450401, guid: 0199413877d31e76390609775552d428, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.54
+      value: -4.55
       objectReference: {fileID: 0}
     - target: {fileID: 5527003215677450401, guid: 0199413877d31e76390609775552d428, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13457,18 +13422,6 @@ PrefabInstance:
       propertyPath: boardObj
       value: 
       objectReference: {fileID: 354602560}
-    - target: {fileID: 6976662652350033699, guid: 0199413877d31e76390609775552d428, type: 3}
-      propertyPath: movementSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6976662652350033699, guid: 0199413877d31e76390609775552d428, type: 3}
-      propertyPath: initialPoint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6976662652350033699, guid: 0199413877d31e76390609775552d428, type: 3}
-      propertyPath: initialPoint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8711577868031843105, guid: 0199413877d31e76390609775552d428, type: 3}
       propertyPath: m_Name
       value: Player
@@ -13488,4 +13441,3 @@ SceneRoots:
   - {fileID: 6470151640534763786}
   - {fileID: 5743016923895275035}
   - {fileID: 354602561}
-  - {fileID: 391976260}

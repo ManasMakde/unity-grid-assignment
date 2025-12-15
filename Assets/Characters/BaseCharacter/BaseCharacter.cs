@@ -7,8 +7,8 @@ using UnityEngine.UIElements;
 public class BaseCharacter : MonoBehaviour
 {
     // Delegates
-    public event Action<Vector2Int /* OldPoint */, Vector2Int /* NewPoint */> OnCurrentPointUpdated;
-    public event Action OnTravelComplete;
+    public event Action<Vector2Int /* OldPoint */, Vector2Int /* NewPoint */> OnCurrentPointUpdated;  // Broadcasted when the character's point on the grid has changed
+    public event Action OnTravelComplete;  // Broadcasted when the characer has completed travelling and has just stopped
 
 
     // Constants
@@ -16,15 +16,15 @@ public class BaseCharacter : MonoBehaviour
 
 
     // To-Set Properties
-    [SerializeField] public Vector2Int initialPoint = new Vector2Int(1, 1);
-    [SerializeField] public float movementSpeed = 10.0f; 
-    [SerializeField] public LayerMask tileMask;
-    [SerializeField] public GameObject boardObj;
+    [SerializeField] public Vector2Int initialPoint = new Vector2Int(1, 1);  // The point on the grid where the character initially starts from 
+    [SerializeField] public float movementSpeed = 10.0f;  // The speed at which the character moves across the grid
+    [SerializeField] public LayerMask tileMask;  // Layer mask for detecting tiles with raycast 
+    [SerializeField] public GameObject boardObj;  // The board object which contains the grid of tiles
 
 
     // Properties
-    public Vector2Int currentPoint { private set; get; } = new Vector2Int(0, 0);
-    protected List<Vector2Int> travelPoints = new List<Vector2Int>();
+    public Vector2Int currentPoint { private set; get; } = new Vector2Int(0, 0);  // Which point on the board the character currently resides on 
+    protected List<Vector2Int> travelPoints = new List<Vector2Int>();  // Grid points (in order) to travel along, As the points are reached they are removed from the list
 
 
     // Components
@@ -35,81 +35,50 @@ public class BaseCharacter : MonoBehaviour
     protected void SetCurrentPoint(Vector2Int newCurrentPoint)
     {
         // Return if trying to assign the same value
-        if(newCurrentPoint == currentPoint)
+        if (newCurrentPoint == currentPoint)
         {
             return;
         }
 
 
-        // Store old point & set new point
+        // Store old point for broadcasting
         var oldCurrentPoint = currentPoint;
+
+
+        // Assign new point
         currentPoint = newCurrentPoint;
 
 
-        // Broadcast
+        // Broadcasting
         OnCurrentPointUpdated?.Invoke(oldCurrentPoint, newCurrentPoint);
     }
 
 
-    // Utility Methods
-    public static bool IsOnLineSegment(Vector3 P, Vector3 A, Vector3 B, float tolerance = 0.0001f)
-    {
-
-        // Check if collinear
-        Vector3 AP = P - A;
-        Vector3 AB = B - A;
-        if (Vector3.Cross(AP, AB).magnitude > tolerance)
-        {
-            return false;
-        }
-
-
-        // Check if within range
-        float sqrMagnitudeAB = AB.sqrMagnitude; 
-        float dotProduct = Vector3.Dot(AP, AB);
-        bool isWihinRange = dotProduct >= -tolerance && dotProduct <= sqrMagnitudeAB + tolerance;
-
-
-        return isWihinRange;
-    }
-
-
     // Update Methods
-    void MovementUpdate()
+    void MovementUpdate()  // Responsible for moving character along travel points
     {
-
-        // Get self position
+        // Get self and tile position to move towards
         Vector3 SelfPosition = transform.position;
+        Vector3 TilePlatformPos = board.GetStandPosition(travelPoints[0]);
+        TilePlatformPos.y = SelfPosition.y;  // To avoid moving along y axis
 
 
-        // Get the position to move towards
-        Vector3 TilePlatformPos = board.GetPlatformPosition(travelPoints[0]);
-        TilePlatformPos.y = SelfPosition.y; // To avoid moving along y axis
+        // Move towards tile position
+        transform.position = Vector3.MoveTowards(SelfPosition, TilePlatformPos, movementSpeed * Time.deltaTime);
+        
 
-
-        // Store old position
-        Vector3 oldPosition = transform.position;
-
-
-        // Move towards
-        Vector3 direction = (TilePlatformPos - transform.position).normalized;
-        transform.Translate(direction * movementSpeed * Time.deltaTime, Space.World);
-
-
-        // Check if we overshot target position
-        Vector3 newPosition = transform.position;
-        if(IsOnLineSegment(oldPosition, newPosition, TilePlatformPos)){
-            transform.position = TilePlatformPos;
-        }
-
-
-        // Remove travel point if reached point
-        if(Vector3.Distance(transform.position, TilePlatformPos) < 0.001f){
+        // When reached destination point
+        if (Vector3.Distance(transform.position, TilePlatformPos) < 0.01f)
+        {
+            // Set the newly reached point as current
             SetCurrentPoint(travelPoints[0]);
+
+
+            // Remove the newly reached point from travel list to avoid retravelling
             travelPoints.RemoveAt(0);
 
 
-            // Broadcast travel complete
+            // Broadcast travel complete when exhausted travel points
             if (travelPoints.Count == 0)
             {
                 OnTravelComplete?.Invoke();
@@ -121,17 +90,24 @@ public class BaseCharacter : MonoBehaviour
     // Override Methods
     protected virtual void Start()
     {
-        // Set initial point
+        // Get Components
+        board = boardObj.GetComponent<Board>();
+
+
+        // Set initial point & it's position
         SetCurrentPoint(initialPoint);
 
 
-        // Get Components
-        board = boardObj.GetComponent<Board>();
+        // Set initial position from point
+        Vector3 IntialPosition = board.GetStandPosition(initialPoint);
+        IntialPosition.y = transform.position.y;  // To avoid moving along y axis
+        transform.position = IntialPosition;
     }
     protected virtual void Update()
     {
-        // Listen for inputs if no travel points
-        if(travelPoints.Count != 0){
+        // Move if given travel points
+        if (travelPoints.Count != 0)
+        {
             MovementUpdate();
         }
     }

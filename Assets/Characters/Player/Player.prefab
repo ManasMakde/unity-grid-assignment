@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124bbcfbe5984ced0b8b656807bafe12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialPoint: {x: 0, y: 0}
   movementSpeed: 5
   tileMask:
     serializedVersion: 2

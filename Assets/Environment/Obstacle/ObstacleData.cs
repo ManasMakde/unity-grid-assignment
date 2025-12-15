@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class RowBool
+public class RowBool  // This struct was created since List<List<bool>> is not editable in the editor
 {
     public bool[] columns;
 }
@@ -13,11 +13,11 @@ public class RowBool
 public class ObstacleData : ScriptableObject
 {
     // Properties
-    public RowBool[] rows;
+    public RowBool[] rows;  // Row containing which points have an obstacle, List<List<bool>> substitute
 
 
     // Methods
-    public bool IsBlocked(int rowIndex, int columnIndex)
+    public bool IsBlocked(int rowIndex, int columnIndex)  // Checks if given point is being blocked by obstacle
     {
         // If not within row range
         if (rowIndex < 0  || rows.Length <= rowIndex)
@@ -45,28 +45,25 @@ public class ObstacleData : ScriptableObject
         }
 
 
-        // Calculate dimensions of grid
+        // Create grid
         int rowCount = rows.Length;
-        int ColCount = rows[0].columns.Length;
+        int colCount = rows[0].columns.Length;
+        int[,] grid = new int[rowCount, colCount];
 
 
-        // Create grid with same dimensions
-        int[,] grid = new int[rowCount, ColCount];
-
-
-        // Iterate through each row and column to populate the grid
+        // Iterate through each row and column to populate the grid with obstacles
         for (int row = 0; row < rowCount; row++)
         {
             // Skip if invalid row
             RowBool rowBool = rows[row];
-            if (rowBool == null || rowBool.columns.Length != ColCount)
+            if (rowBool == null || rowBool.columns.Length != colCount)
             {
                 continue;
             }
 
 
-            // Assign values in grid
-            for (int col = 0; col < ColCount; col++)
+            // Assign obstacle in grid
+            for (int col = 0; col < colCount; col++)
             {
                 grid[row, col] = rowBool.columns[col] ? 0 : 1; // Blocked = 1, Unblocked = 0
             }

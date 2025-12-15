@@ -109,5 +109,4 @@ public class ObstacleEditor : EditorWindow
         gridRoot.style.marginTop = 10;
         root.Add(gridRoot);
     }
-
 }

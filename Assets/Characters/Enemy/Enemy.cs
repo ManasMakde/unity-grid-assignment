@@ -17,11 +17,11 @@ public class Enemy : BaseCharacter, IEnemyAI
 
     // Properties
     private Player player; // Player to chase
-    private List<Vector2Int> playerSurroundOffsets = new List<Vector2Int> { Vector2Int.up, Vector2Int.down, Vector2Int.right, Vector2Int.left };
+    private List<Vector2Int> playerSurroundOffsets = new List<Vector2Int> { Vector2Int.up, Vector2Int.down, Vector2Int.right, Vector2Int.left };  // 4 adjacent sides enemy can be around player
 
 
     // Utility Methods
-    void CalcPointsToPlayer(Vector2Int OldPoint, Vector2Int NewPoint)
+    void CalcPointsToPlayer(Vector2Int OldPoint, Vector2Int NewPoint)  // Sets the travel points such that they reach the player (Binded to Player.OnCurrentPointUpdated)
     {
         // Return if already travelling
         if (travelPoints.Count != 0)
@@ -33,7 +33,6 @@ public class Enemy : BaseCharacter, IEnemyAI
         // Return if already surrounding player
         foreach (var surroundOffset in playerSurroundOffsets)
         {
-            // Get new travel points
             Vector2Int surroundPoint = player.currentPoint + surroundOffset;
             if (surroundPoint == currentPoint)
             {
@@ -42,7 +41,7 @@ public class Enemy : BaseCharacter, IEnemyAI
         }
 
 
-        // Get Travel Points
+        // Get Travel Points towards whichever of the 4 adjacent side is available
         foreach (var surroundOffset in playerSurroundOffsets)
         {
             // Get new travel points
@@ -57,19 +56,15 @@ public class Enemy : BaseCharacter, IEnemyAI
             }
 
 
-            // Assign travel points
+            // Assign new travel points
             travelPoints = newTravelPoints;
             break;
         }
     }
-    void Catchup()
-    {
-        CalcPointsToPlayer(Vector2Int.zero, player.currentPoint);
-    }
 
 
     // Interface Methods
-    public bool HasOccupiedPoint(Vector2Int point)
+    public bool HasOccupiedPoint(Vector2Int point)  // Checks if enemy has occupied given point on the grid
     {
         return point == currentPoint;
     }
@@ -78,20 +73,27 @@ public class Enemy : BaseCharacter, IEnemyAI
     // Override Methods
     protected override void Start()
     {
+        // Invoke from parent 
         base.Start();
 
 
-        // Get player & bind to it's relevant delegates
+        // Get player component
         var playerObject = GameObject.FindWithTag(playerTag);
         if (playerObject.TryGetComponent<Player>(out Player outPlayer))
         {
             player = outPlayer;
-            player.OnCurrentPointUpdated += CalcPointsToPlayer;
-            CalcPointsToPlayer(Vector2Int.zero, player.currentPoint);
         }
 
 
-        // Bind to self
-        OnTravelComplete += Catchup;
+        // Bind such that enemy starts moving whenever player's current point has been updated
+        player.OnCurrentPointUpdated += CalcPointsToPlayer;
+
+
+        // Start moving towards player the moment the game starts 
+        CalcPointsToPlayer(Vector2Int.zero, player.currentPoint);
+
+
+        // For rechecking if next to player after self travel has completed
+        OnTravelComplete += () =>{ CalcPointsToPlayer(Vector2Int.zero, player.currentPoint); };
     }
 }
