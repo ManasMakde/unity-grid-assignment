@@ -68,7 +68,7 @@ public class ObstacleData : ScriptableObject
             // Assign values in grid
             for (int col = 0; col < ColCount; col++)
             {
-                grid[row, col] = rowBool.columns[col] ? 1 : 0; // Blocked = 1, Unblocked = 0
+                grid[row, col] = rowBool.columns[col] ? 0 : 1; // Blocked = 1, Unblocked = 0
             }
         }
 

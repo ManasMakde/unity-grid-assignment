@@ -2,7 +2,7 @@ using UnityEngine;
 
 public interface ITileStats
 {
-    Vector2Int TileLocation();
+    Vector2Int GetTilePoint();
     Vector3 GetPlatformPosition();
 }
 
@@ -15,13 +15,12 @@ public class Tile : MonoBehaviour, ITileStats  // Main tile script responsible f
 
 
     // Interface Methods
-    public Vector2Int TileLocation()
+    public Vector2Int GetTilePoint()
     {
         return new Vector2Int(row, column);
     }
-
-    public Vector3 GetPlatformPosition()  // This returns the world location of platform i.e. where objects can be placed on top of
+    public Vector3 GetPlatformPosition()  // This returns the world position of platform i.e. where objects can be placed on top of
     {
-        return transform.position + platformOffset;
+        return gameObject.transform.position + platformOffset;
     }
 }

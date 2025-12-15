@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -12,19 +14,24 @@ public class Board : MonoBehaviour
 
 
     // Exposed Methods
-    public Vector2 GetTilePosition(Vector2Int Point){
+    public Vector3 GetPlatformPosition(Vector2Int Point){
 
         // Return origin if tile not found
         var tile = obstacleManager.Tiles[Point.x][Point.y];
         if(tile == null){
-            return Vector2.zero;
+            return Vector3.zero;
         }
 
 
-        return tile.transform.position;
+        // Return platform component if implements tile stats interface
+        if(tile.TryGetComponent<ITileStats>(out var tileStats)){
+            return tileStats.GetPlatformPosition();
+        }
+
+        return Vector3.zero;
     }
-    public Vector2Int[] GetPathToPoint(Vector2Int fromPoint, Vector2Int toPoint){
-        return AStarPath.FindPath(cacheObstacleGrid, fromPoint, toPoint);
+    public List<Vector2Int> GetPathToPoint(Vector2Int fromPoint, Vector2Int toPoint){
+        return AStarPath.FindPath(cacheObstacleGrid, fromPoint, toPoint).ToList();
     }
 
 

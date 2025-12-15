@@ -55,7 +55,7 @@ public static class AStarPath
         }
 
 
-        // Add the source location to path as well
+        // Add the source point to path as well
         pathArray[pathIndex++] = new Vector2Int(row, col);
 
 
