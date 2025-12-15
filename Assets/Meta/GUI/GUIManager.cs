@@ -14,7 +14,7 @@ public class GUIManager : MonoBehaviour
     private Player player;
 
 
-    // Helper Methods
+    // Utility Methods
     void AssignHoverLabel(Vector2Int OldLocation, Vector2Int NewLocation)  // Updates label whenever hover location is changed
     {
         bool isOnBoard = NewLocation.x != -1 &&  NewLocation.y != -1;

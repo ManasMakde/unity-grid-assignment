@@ -1,17 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ObstacleManager : MonoBehaviour
 {
     // Properties
     [SerializeField] public ObstacleData obstacleData;
     [SerializeField] public GameObject obstaclePrefab;
-    [SerializeField] public Vector3 obstacleOffset;
-    private List<List<GameObject>> TileGrid;
+    public List<List<GameObject>> Tiles { private set; get;} = null;
 
 
-    // Helper Methods
-    List<List<GameObject>> CalcTileGrid()
+    // Utility Methods
+    List<List<GameObject>> CalcTiles()
     {
         // Get all child tiles
         GameObject board = this.gameObject;
@@ -25,7 +25,7 @@ public class ObstacleManager : MonoBehaviour
             {
                 // Skip if not tile i.e. doesn't implement tile interface
                 GameObject tile = rowTransform.GetChild(colIndex).gameObject;
-                if (!tile.TryGetComponent<TileScript>(out var script))
+                if (!tile.TryGetComponent<Tile>(out var script))
                 {
                     continue;
                 }
@@ -42,16 +42,16 @@ public class ObstacleManager : MonoBehaviour
     void CreateObstacles()
     {
         // Return if invalid properties
-        if (TileGrid == null || obstaclePrefab == null || obstacleData == null)
+        if (Tiles == null || obstaclePrefab == null || obstacleData == null)
         {
             return;
         }
 
 
         // Iterate through obstacle data
-        for (int rowIndex = 0; rowIndex < TileGrid.Count; rowIndex++)
+        for (int rowIndex = 0; rowIndex < Tiles.Count; rowIndex++)
         {
-            var row = TileGrid[rowIndex];
+            var row = Tiles[rowIndex];
             for (int colIndex = 0; colIndex < row.Count; colIndex++)
             {
                 // Skip if tile is not blocked
@@ -60,10 +60,19 @@ public class ObstacleManager : MonoBehaviour
                     continue;
                 }
 
+
                 // Instantiate obstacle & place it above tile
                 var tile = row[colIndex];
-                Vector3 obstaclePosition = tile.transform.position + obstacleOffset;
-                GameObject obstacle = Instantiate(obstaclePrefab, obstaclePosition, Quaternion.identity);
+                if(tile == null){
+                    continue;
+                }
+
+
+                // Create an obstacle at tile platform position
+                if(tile.TryGetComponent<ITileStats>(out var tileStats)){
+                    Vector3 obstaclePosition =  tileStats.GetPlatformPosition();
+                    GameObject obstacle = Instantiate(obstaclePrefab, obstaclePosition, Quaternion.identity);
+                }
             }
         }
     }
@@ -73,7 +82,7 @@ public class ObstacleManager : MonoBehaviour
     void Start()
     {
         // Assign fresh tile grid
-        TileGrid = CalcTileGrid();
+        Tiles = CalcTiles();
 
 
         // Create obstacles on grid

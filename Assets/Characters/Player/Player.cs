@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     }
 
 
-    // Helper Methods
+    // Utility Methods
     void MouseHoverInputUpdate()
     {
         // Raycast in the direction of camera location to mouse location
