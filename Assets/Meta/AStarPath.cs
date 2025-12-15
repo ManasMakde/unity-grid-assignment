@@ -137,16 +137,12 @@ public static class AStarPath
             closedCells[src.x, src.y] = true;
 
 
-            // Generating all the 8 neighbours of this cell
-            Vector2Int[] neighbours = new Vector2Int[8];
-            for (int i = 0; i < 8; i++)
-            {
-                neighbours[i] = src + neighbourOffsets[i];
-            }
-
-
             // Iterate through all neighbours            
-            foreach (Vector2Int neighbour in neighbours){
+            foreach (Vector2Int offset in neighbourOffsets){
+                
+                // Get neighbour of this cell
+                Vector2Int neighbour = src + offset;
+
 
                 // Skip if neighbour is invalid
                 if (!IsValid(neighbour, TOTAL_ROWs, TOTAL_COLS))
@@ -177,7 +173,7 @@ public static class AStarPath
                 if (cellDetails[neighbour.x, neighbour.y].f == double.MaxValue || cellDetails[neighbour.x, neighbour.y].f > fNew)
                 {
                     // Add to open list
-                    openList.Add((fNew, new Vector2Int(neighbour.x, neighbour.y)));
+                    openList.Add((fNew, neighbour));
 
 
                     // Update the details of this cell

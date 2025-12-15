@@ -1,12 +1,16 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
 public class GUIManager : MonoBehaviour
 {
-    // Properties
-    [SerializeField] public string playerTag;
+    // To-Set Properties
+    [SerializeField] public string playerTag = "Player";
     [SerializeField] public string hoverLabelIdentifier;
     [SerializeField] public string playerLabelIdentifier;
+
+
+    // Properties
     private GameObject playerObject;
     private Player player;
 
@@ -55,5 +59,4 @@ public class GUIManager : MonoBehaviour
         }
 
     }
-
 }
